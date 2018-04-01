@@ -8,8 +8,8 @@ the folder for environment setting.
 - set-env.sh : help you install packages on blank systems
 - teredo-tunnel.sh : install and use miredo 
 - utorrent-setting.sh : install and use utorrent
-- .bashrc : env-set for linux/ubuntu
-- .emacs : emacs setting
+- .bashrc : my env-set for linux/ubuntu
+- .emacs : my emacs setting
 - intel-graphic.sh : intel graphics tool, optional
 ## solver 
 the folder for solving miscellany of problems.
