@@ -1,7 +1,7 @@
 # QuickSolver
 **solver for confusion and miscellany of problems whenever it is needed**
 
- People can be fall in big confusion when a new environment is setting. This repo may help you solve some env-set problems, becoming a good memorandum of miscellany.
+ People usually fall in big confusion when a new environment is setting. This repo may help you solve some env-set problems, becoming a good memorandum of miscellany.
  
  ## setting
 the folder for environment setting.
