@@ -13,7 +13,7 @@ the folder for environment setting.
 - intel-graphic.sh : intel graphics tool, optional
 ## solver 
 the folder for solving miscellany of problems.
-- ./caffe-maker : fixed version of caffe makefile, help you install caffe
+- ~~./caffe-maker : fixed version of caffe makefile, help you install caffe~~
 - dpkg-error.sh : solve "dealing with.." error
 - graphic-control.sh : switch GPU easily, optional
 - ppa-problem.sh : fcitx update related, optional
