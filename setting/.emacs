@@ -21,7 +21,9 @@
  '(font-use-system-font t)
  '(global-auto-complete-mode t)
  '(global-linum-mode t)
- '(package-selected-packages (quote (ac-geiser racket-mode haskell-mode auto-complete)))
+ '(package-selected-packages
+   (quote
+    (robe flymake-ruby rinari ac-geiser racket-mode haskell-mode auto-complete)))
  '(show-paren-mode t)
  '(size-indication-mode t))
 (custom-set-faces
