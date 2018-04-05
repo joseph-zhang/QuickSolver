@@ -15,6 +15,7 @@ the folder for environment setting.
 the folder for solving miscellany of problems.
 - ~~./caffe-maker : fixed version of caffe makefile, help you install caffe~~
 - dpkg-error.sh : solve "dealing with.." error
+- boot-space-problem.sh : clean /boot space  
 - graphic-control.sh : switch GPU easily, optional
 - ppa-problem.sh : fcitx update related, optional
 - system-program-problem.sh : clear system collapse history
