@@ -19,3 +19,9 @@ the folder for solving miscellany of problems.
 - graphic-control.sh : switch GPU easily, optional
 - ppa-problem.sh : fcitx update related, optional
 - system-program-problem.sh : clear system collapse history
+
+## exercise
+the folder for OJ problems.<br>
+
+(Note that I created a repository as algorithms storage before, but it is no use anymore.<br>
+Now I think a folder for problem solving is enough, algorithm template is just a joke.)
