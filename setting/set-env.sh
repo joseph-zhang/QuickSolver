@@ -125,3 +125,17 @@ sudo apt-get install cabal-install-1.24
 # alias ecw="emacsclient25"
 # export PATH=~/.cabal/bin:/opt/ghc/bin:/opt/cabal/bin:$PATH
 source ~/.bashrc
+
+# optional: Ruby env for rubyist
+sudo apt-get install ruby-full
+gem install rails
+# optional: jekyll
+gem install jekyll
+gem install bundler # If you don't have bundler installed
+bundle install
+gem install kramdown
+
+# optional: Racket for schemer 
+sudo add-apt-repository ppa:plt/racket
+sudo apt-get update
+sudo apt-get install racket
