@@ -139,3 +139,11 @@ gem install kramdown
 sudo add-apt-repository ppa:plt/racket
 sudo apt-get update
 sudo apt-get install racket
+
+# optional: Rust for Rustacean
+curl https://sh.rustup.rs -sSf | sh
+# then check the version with
+rustc --version
+# if failed, add the path to your bashrc and do
+source ~/.bashrc
+# check it again, you can also find that cargo is installed.
