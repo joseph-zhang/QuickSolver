@@ -71,7 +71,20 @@
 ))
 
 ; transparent
-(set-frame-parameter nil 'alpha '(95 . 100))
+;(set-frame-parameter nil 'alpha '(95 . 100))
+;;set transparent effect
+(global-set-key [(f11)] 'loop-alpha)
+(setq alpha-list '((95 65) (100 100) (85 55) (75 45) (65 35)))
+(defun loop-alpha ()
+  (interactive)
+  (let ((h (car alpha-list)))                ;; head value will set to
+    ((lambda (a ab)
+       (set-frame-parameter (selected-frame) 'alpha (list a ab))
+       (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))
+       ) (car h) (car (cdr h)))
+    (setq alpha-list (cdr (append alpha-list (list h))))
+    )
+)
 
 ; change fringe bent arrows
 (define-fringe-bitmap 'right-curly-arrow
@@ -92,3 +105,7 @@
    #b00000000
    #b00000000
    #b00000000])
+
+; Hide what we don't need
+(tool-bar-mode -1)
+(setq inhibit-splash-screen t)
