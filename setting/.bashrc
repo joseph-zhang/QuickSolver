@@ -132,3 +132,6 @@ export PYTHONPATH=/usr/local/caffe/python:$PYTHONPATH
 # cpp config
 alias g++='g++ -std=c++11'
 alias clang++='clang++ -std=c++11'
+
+# rust config
+export PATH=~/.cargo/bin:$PATH
