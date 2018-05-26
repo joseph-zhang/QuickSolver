@@ -4,7 +4,7 @@
 
 # First, check the compiz setting
 ccsm
-# if the is not installed, do
+# if it is not installed, do
 sudo apt install compizconfig-settings-manager
 
 # find the item "Ubuntu Unity Plugin"
