@@ -30,3 +30,4 @@ Now I think a folder for problem solving is enough, algorithm template is just a
 the folder for basic algorithm templates.
 
 It contains some of the most classic algorithms which can be used in OJ practise.
+(template is stiff. To enhance the coding ability, it is not so valuable anymore)
