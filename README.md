@@ -15,7 +15,7 @@ the folder for environment setting.
 the folder for solving miscellany of problems.
 - ~~./caffe-maker : fixed version of caffe makefile, help you install caffe~~
 - dpkg-error.sh : solve "dealing with.." error
-- boot-space-problem.sh : clean /boot space  
+- boot-space-problem.sh : clean /boot space
 - graphic-control.sh : switch GPU easily, optional
 - ppa-problem.sh : fcitx update related, optional
 - system-program-problem.sh : clear system collapse history
@@ -25,3 +25,8 @@ the folder for OJ problems.<br>
 
 (Note that I created a repository as algorithms storage before, but it is no use anymore.<br>
 Now I think a folder for problem solving is enough, algorithm template is just a joke.)
+
+## template
+the folder for basic algorithm templates.
+
+It contains some of the most classic algorithms which can be used in OJ practise.
