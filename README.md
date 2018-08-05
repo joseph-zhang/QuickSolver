@@ -9,7 +9,7 @@ the folder for environment setting.
 - teredo-tunnel.sh : install and use miredo 
 - utorrent-setting.sh : install and use utorrent
 - .bashrc : my env-set for linux/ubuntu
-- .emacs : my emacs setting
+- .emacs : my emacs setting (another choice is spaceEmacs)
 - intel-graphic.sh : intel graphics tool, optional
 ## solver 
 the folder for solving miscellany of problems.
