@@ -146,4 +146,16 @@ curl https://sh.rustup.rs -sSf | sh
 rustc --version
 # if failed, add the path to your bashrc and do
 source ~/.bashrc
+# note that the addition should be
+export PATH=~/.cargo/bin:$PATH 
 # check it again, you can also find that cargo is installed.
+
+# optional: nvm for js user
+# check nvm homepage and install it. It is useful for node version management.
+# after nvm is installed, use following code to install latest release of node
+nvm install node
+# then use
+nvm use node
+# to check the node version. the npm should also be installed correctly.
+# to check the installed instances of nvm, just use
+nvm ls 
