@@ -147,3 +147,7 @@ export JAVA_HOME=/usr/jdk
 export CLASSPATH=.:$JAVA_HOME/lib/
 export PATH=$PATH:$JAVA_HOME/bin
 export JAVA_HOME PATH CLASSPATH
+
+# coq path
+export OPAMROOT=~/opam-coq.8.8.1
+eval `opam config env`
