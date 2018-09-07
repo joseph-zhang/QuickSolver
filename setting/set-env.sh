@@ -179,3 +179,21 @@ export OPAMROOT=~/opam-coq.8.8.1
 eval `opam config env`
 # then use this to check coq version
 coqc -v
+# To add spacemacs support of coq, we need coq-mode
+# but it is not so easy to configure it.
+# what we need: coq(of course), PG(i.e. Proof General: https://proofgeneral.github.io/),
+# coq-layer(http://develop.spacemacs.org/layers/+lang/coq/README.html#laying-out-windows).
+# here is a tutorial: http://ignatirabo.github.io/misc/2017/11/25/coq-in-spacemacs/
+# first clone PG to emacs.d and make it
+git clone https://github.com/ProofGeneral/PG ~/.emacs.d/lisp/PG
+cd ~/.emacs.d/lisp/PG
+make
+# then clone coq-layer to our configuration layer folder and rename it to 'coq
+cd ~/.spacemacs.d/layers
+git clone https://github.com/olivierverdier/spacemacs-coq.git
+mv spacemacs-coq coq
+# and then modify the config.el in coq layer
+# replace "yourname" according to your own system config
+(defvar proof-general-path "/home/yourname/.emacs.d/lisp/PG/generic/proof-site"
+  "The path to proof general")
+# after that, restart emacs and wait for a while, it will install company-coq for us.
