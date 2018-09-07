@@ -158,4 +158,24 @@ nvm install node
 nvm use node
 # to check the node version. the npm should also be installed correctly.
 # to check the installed instances of nvm, just use
-nvm ls 
+nvm ls
+
+# optional: OPAM for ocaml or coq user
+# note that coq is implemented by ocaml, hence ocaml is necessary,
+# the recommended way to install ocaml and coq is OPAM, which is the package manager of ocaml.
+# to install OPAM: http://opam.ocaml.org/doc/Install.html#Binary-distribution
+add-apt-repository ppa:avsm/ppa
+apt-get update
+apt-get install ocaml ocaml-native-compilers camlp4-extra opam
+# and then install coq and some related packages: https://coq.inria.fr/opam/www/using.html
+# note that the following version 8.8.1 is just an example
+export OPAMROOT=~/opam-coq.8.8.1 # installation directory
+opam init -n --comp=4.02.3 -j 2 # 2 is the number of CPU cores(can be changed)
+opam repo add coq-released http://coq.inria.fr/opam/released
+opam install coq.8.8.1 && opam pin add coq 8.8.1
+# to run coq, don't forget to add its path in bashrc
+# that is, add following two lines:
+export OPAMROOT=~/opam-coq.8.8.1
+eval `opam config env`
+# then use this to check coq version
+coqc -v
