@@ -106,7 +106,12 @@ sudo apt-get install texlive-full # consider your hard disk space
 ./configure --with-emacs
 make
 make install # done!
-# the configure of ./emacs file is up to you
+# the configure of ./emacs file is up to you;
+# To add latex support for spacemacs, check this page 
+# https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/latex
+# just add latex in dotspacemacs-configuration-layers.
+# To enable auto-fill, add the following line in dotspacemacs-configuration-layers:
+# (latex :variables latex-enable-auto-fill t)
 
 # opengl3
 sudo apt-get install build-essential freeglut3 freeglut3-dev binutils-gold
