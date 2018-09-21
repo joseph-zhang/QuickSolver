@@ -202,3 +202,18 @@ mv spacemacs-coq coq
 (defvar proof-general-path "/home/yourname/.emacs.d/lisp/PG/generic/proof-site"
   "The path to proof general")
 # after that, restart emacs and wait for a while, it will install company-coq for us.
+
+# optional: JDK for javaer
+# first download the Java SE Development Kit from
+# http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+# then decompress it (take jdk-8u181 as example)
+tar -zxvf jdk-8u181-linux-x64.tar.gz
+# move it to /usr/local/
+sudo mv jdk1.8.0_181/ /usr/local/
+# create soft link
+sudo ln -s /usr/local/jdk1.8.0_181/ /usr/jdk
+# then modify ~/.bashrc as what I showed.
+# activate it:
+source ~/.bashrc
+# check if it work
+javac -version
