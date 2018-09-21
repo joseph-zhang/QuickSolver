@@ -1,4 +1,4 @@
-# 2018/9/5
+# 2018/9/22
 # this file contains some basic methods for development environment
 # system : ubuntu 16.04
 # CPU : Intel Core i7-7700HQ x 8
@@ -216,7 +216,7 @@ sudo ln -s /usr/local/jdk1.8.0_181/ /usr/jdk
 # activate it:
 source ~/.bashrc
 # check if it work
-javac -version
+java -version
 
 # optional: sbt for scala user
 # before installation, check following two pages:
