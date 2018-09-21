@@ -155,7 +155,7 @@ source ~/.bashrc
 export PATH=~/.cargo/bin:$PATH 
 # check it again, you can also find that cargo is installed.
 
-# optional: nvm for js user
+# optional: nvm for JSer
 # check nvm homepage and install it. It is useful for node version management.
 # after nvm is installed, use following code to install latest release of node
 nvm install node
@@ -217,3 +217,28 @@ sudo ln -s /usr/local/jdk1.8.0_181/ /usr/jdk
 source ~/.bashrc
 # check if it work
 javac -version
+
+# optional: sbt for scala user
+# before installation, check following two pages:
+# https://www.scala-lang.org/download/
+# https://docs.scala-lang.org/getting-started-sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html
+# The most important thing to "install" scala:
+# Compared to other programming languages, installing Scala is a bit unusual.
+# Scala is unusual because it is usually installed for each of your Scala projects 
+# rather than being installed system-wide!!
+# who can do this? ==> sbt, the scala build tool.
+# Hence, all we need is just sbt, it will automatically download proper scala version according to specific project,
+# because a single local scala version is usually not enough.
+# (note that spt needs JDK)
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt-get update
+sudo apt-get install sbt
+# Now sbt is installed.
+# However, it's also possible to "install" Scala.
+# This means install a specific scala version and use it from the command line.
+# check scala official website, select a release and download it.
+# then decompress it and move it to /opt/scala,
+# just export its path in bashrc, then do activation.
+# check local scala version
+scala -version
