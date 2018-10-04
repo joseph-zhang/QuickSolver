@@ -1,4 +1,4 @@
-# 2018/9/22
+# 2018/10/5
 # this file contains some basic methods for development environment
 # system : ubuntu 16.04
 # CPU : Intel Core i7-7700HQ x 8
@@ -7,6 +7,10 @@
 # construct : GPU driver, Cuda8.0, Cudnn6.0, Opencv3.2, caffe, tensorflow-1.3.0
 # python environment can be constructed either 2ed or 3ed, the following configure is 2ed
 # note that environment for py-3ed is also very easy, just install pip3 and use it to install py-libs
+# fonts:
+#     system: sarasa-mono-sc-regular
+#     editor: iosevka-cc-slab-extralight
+#     CJK for latex: Source Han Serif SC
 
 # GPU Driver installation
 # find the proper version for your GPU (my GPU is GTX1060, select the version 384.98)
