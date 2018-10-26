@@ -246,3 +246,22 @@ sudo apt-get install sbt
 # just export its path in bashrc, then do activation.
 # check local scala version
 scala -version
+
+# install zsh and Oh-my-zsh
+# first install zsh
+sudo apt install zsh
+# change default shell to zsh =>
+# change ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash to /bin/zsh
+sudo vim /etc/passwd
+# install oh-my-sh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# then we can change zsh theme by modifying ~/.zshrc
+# --------------------------------- hide host name ---------------------------------
+# prompt_context() {
+#  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+#    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+#  fi
+# }
+# ----------------------------------------------------------------------------------
+# add this block of code in ~/.zshrc
+source ~/.zshrc
