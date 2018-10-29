@@ -166,8 +166,11 @@ nvm install node
 # then use
 nvm use node
 # to check the node version. the npm should also be installed correctly.
+npm -v
 # to check the installed instances of nvm, just use
 nvm ls
+# If you need Typescript
+npm install -g typescript
 
 # optional: OPAM for ocaml or coq user
 # note that coq is implemented by ocaml, hence ocaml is necessary,
@@ -265,3 +268,13 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # ----------------------------------------------------------------------------------
 # add this block of code in ~/.zshrc
 source ~/.zshrc
+
+# optional: Julia installation
+# First download the binary files from one of:
+# 1). offical: https://julialang.org/downloads/ (may be very slow)
+# 2). mirrors (e.g. USTC): http://mirrors.ustc.edu.cn/julia/
+# then decompress the package to a path (up to you)
+# and add your julia path to bashrc PATH.
+source ~/.bashrc
+# check julia version
+julia -version
