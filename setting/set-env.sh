@@ -12,6 +12,25 @@
 #     editor: iosevka-cc-slab-extralight
 #     CJK for latex: Source Han Serif SC
 
+#                          ./+o+-
+#                  yyyyy- -yyyyyy+
+#               ://+//////-yyyyyyo
+#           .++ .:/++++++/-.+sss/`      OS: Ubuntu 16.04 xenial
+#         .:++o:  /++++++++/:--:/-      Packages: 2724
+#        o:+o+:++.`..```.-/oo+++++/     Shell: zsh 5.1.1
+#       .:+o:+o/.          `+sssoo+/    Resolution: 3840x1080
+#  .++/+:+oo+o:`             /sssooo.   DE: Unity 7.4.5
+# /+++//+:`oo+o               /::--:.   WM: Compiz
+# \+/+o+++`o++o               ++////.   WM Theme: Numix
+#  .++.o+++oo+:`             /dddhhh.   GTK Theme: Numix [GTK2/3]
+#       .+.o+oo:.          `oddhhhh+    Icon Theme: Numix-Circle
+#        \+.++o+o``-````.:ohdhhhhh+     Font: 等距更纱黑体 SC 11
+#         `:o+++ `ohhhhhhhhyo++os:
+#           .o:`.syhhhhhhh/.oo++o`
+#               /osyyyyyyo++ooo+++/
+#                   ````` +oo+++o\:
+#                          `oo++.
+
 # GPU Driver installation
 # find the proper version for your GPU (my GPU is GTX1060, select the version 384.98)
 # note that the disable security boot should be selected
