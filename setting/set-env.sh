@@ -69,12 +69,15 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 # check cudnn versio
 
 
 # opencv3.2
-# this is a key process, many wierd problems can be seen
-# first download the package from opencv.org, decompress it at no matter where you want
+# this is a key process.
+# first download the package from opencv.org, decompress it at no matter where you want.
+# Note that we need to add corresponding contrib module,
+# download it from https://github.com/opencv/opencv_contrib/archive/3.2.0.zip
+# decompress it to your opencv dir and rename it as opencv_contrib.
 cd opencv-3.2.0 # up to your own path
 mkdir build
 cd build
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ..
 make -j8 # parallel compiled, up to your own cpu condition
 sudo make install # install opencv
 pkg-config --modversion opencv # check opencv version
