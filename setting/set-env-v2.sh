@@ -37,11 +37,13 @@ sudo pacman -Syy # this step only synchronize packages
 sudo pacman -Syu # renew the whole system
 # do not forget to add arch key
 sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
-# yaourt is old, we can install yay
+# yaourt is old, we can install yay for replacing
 sudo pacman -S yay
-# try to use yay, perhaps we can install typora
+# try to use yay, for example, install typora
 yay -S typora
 # It works!
+# Note that if you complete these renewing steps, the GPU driver may not match corrent system settings,
+# don't worry about that, just reboot and the driver will upadate to the newest version, as well as CUDA version.
 
 # zsh and oh-my-zsh
 # zsh is pre-installed in my i3 version, but oh-my-zsh setting is still needed.
