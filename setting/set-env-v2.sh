@@ -48,3 +48,11 @@ yay -S typora
 # zsh and oh-my-zsh
 # zsh is pre-installed in my i3 version, but oh-my-zsh setting is still needed.
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Startup settings
+# (The following settings work by modifying $HOME/.i3/config)
+# - wallpaper setting
+exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.jpg"
+# - Transparent setting
+exec --no-startup-id xcompmgr &
+exec --no-startup-id sleep .2 && exec transset -n i3bar 0.65
