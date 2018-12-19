@@ -100,7 +100,7 @@ display-setup-script=/usr/local/bin/optimus.sh
 # (5). OK, reboot and check if it work.
 # If your setting is correct, the other monitor will work now.
 # However, what is shown on that monitor is the same as primary one.
-# Just use arandr to change the manner.
+# Just use arandr to change the manner: save arandr setting in ~/.screenlayout and exec it in i3 config file.
 
 # zsh and oh-my-zsh
 # zsh is pre-installed in my i3 version, but oh-my-zsh setting is still needed.
@@ -111,12 +111,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # - wallpaper setting
 exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.jpg"
 # if this not work, set a picture in lightdm-settings
-# - Transparent setting
-exec --no-startup-id xcompmgr &
-exec --no-startup-id sleep .2 && exec transset -n i3bar 0.85
-# don't forget to install requirements
+# - Using compton to set transparent, just install GUI setting manager
+pacman -S compton-conf
+# don't forget to install feh
 pacman -S feh
-pacman -S xcompmgr
 
 # Chinese support
 sudo pacman -S fcitx-im # full selection
@@ -126,3 +124,4 @@ sudo pacman -S fcitx-sogoupinyin
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
+exec fcitx &
