@@ -51,9 +51,9 @@ yay -S typora
 lspci | grep VGA
 # Here I only find single NVIDIA device, Intel one is not found!
 # Hence, if I use the official recommended bumblebee, it will not work.
-# In another way, I can use Nvidia as primary output source instead of Intel, so try Nvidia-Prime
+# In another way, I can use Nvidia as primary output source instead of Intel, so try Nvidia-Prime.
 # [Reference]: https://forum.manjaro.org/t/howto-set-up-prime-with-nvidia-proprietary-driver/40225
-# (1). Install nvidia driver (if you select free when installing system, you can skip this step if non-free was seleted.)
+# (1). Install nvidia driver (do this if you select 'free' when installing system. Just skip this step if 'non-free' was seleted.)
 sudo mhwd -i pci video-nvidia
 # (2). Revise mhwd settings
 # - delete /etc/X11/xorg.conf.d/90-mhwd.conf
@@ -110,6 +110,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # (The following settings work by modifying $HOME/.i3/config)
 # - wallpaper setting
 exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.jpg"
+# if this not work, set a picture in lightdm-settings
 # - Transparent setting
 exec --no-startup-id xcompmgr &
 exec --no-startup-id sleep .2 && exec transset -n i3bar 0.85
