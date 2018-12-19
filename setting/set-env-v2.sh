@@ -55,4 +55,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.jpg"
 # - Transparent setting
 exec --no-startup-id xcompmgr &
-exec --no-startup-id sleep .2 && exec transset -n i3bar 0.65
+exec --no-startup-id sleep .2 && exec transset -n i3bar 0.85
+# don't forget to install requirements
+pacman -S feh
+pacman -S xcompmgr
