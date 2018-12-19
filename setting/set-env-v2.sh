@@ -123,3 +123,7 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 exec fcitx &
+
+# Conky prompt information
+# If you don't want to show prompt inforamtions about i3wm,
+# just modify /usr/share/conky/conkyxx_shortcuts_maia, comment those lines in conky.text
