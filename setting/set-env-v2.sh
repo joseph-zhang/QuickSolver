@@ -117,3 +117,12 @@ exec --no-startup-id sleep .2 && exec transset -n i3bar 0.85
 # don't forget to install requirements
 pacman -S feh
 pacman -S xcompmgr
+
+# Chinese support
+sudo pacman -S fcitx-im # full selection
+sudo pacman -S fcitx-configtool
+sudo pacman -S fcitx-sogoupinyin
+# then add the following lines in ~/.xprofile
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
