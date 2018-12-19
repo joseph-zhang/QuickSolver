@@ -107,12 +107,10 @@ display-setup-script=/usr/local/bin/optimus.sh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Startup settings
-# (The following settings work by modifying $HOME/.i3/config)
 # - wallpaper setting
-exec --no-startup-id feh --bg-scale "$HOME/.i3/wallpaper.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpaper/wallpaper.jpg"
 # if this not work, set a picture in lightdm-settings
-# - Using compton to set transparent, just install GUI setting manager
-pacman -S compton-conf
+# - Using compton to set transparent. Just modify ~/.config/compton.conf, uncomment opacity terms.
 # don't forget to install feh
 pacman -S feh
 
