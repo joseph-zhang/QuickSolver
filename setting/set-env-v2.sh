@@ -172,3 +172,17 @@ sudo chmod a+r cuda/include/cudnn.h
 # check cudnn version
 cat /opt/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 # Done. reboot.
+
+# Font settings
+# First install iosevka
+sudo pacman -S ttf-iosevka-cc-slab
+# set i3-bar font, modify $HOME/.i3/config
+font xft:IosevkaCC Slab 11
+# then, set Urxvt font, modify ~/.Xresources
+URxvt.font:xft:IosevkaCC Slab:antialias=True:pixelsize=15
+# and renew Urxvt
+xrdb -load ~/.Xresources
+# If some command cannot work, with error 'rxvt-unicode-256color': unknown terminal type.
+# Just modify ~/.zshrc, adding the following line.
+export TERM='xterm-256color'
+# Enjoy new font!
