@@ -131,3 +131,17 @@ exec fcitx &
 # Close Beep
 # Beep is noisy. To close it, use this command
 sudo rmmod pcspkr
+
+# Install python env - Anaconda
+# First download install file, recommend to search the install file from a mirror site (e.g. USTC Mirror)
+# Then, follow the install steps on "http://docs.anaconda.com/anaconda/install/linux/"
+# Don't forget to add install location to PATH in $HOME/.zshrc, we can copy that from $HOME/.bashrc
+source ~/.zshrc
+# Try it now:
+conda list
+conda info --envs
+# So the Anaconda is installed.
+# We can also reset the source:
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+# Try it again, the download is very fast now.
