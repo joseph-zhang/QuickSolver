@@ -42,7 +42,7 @@ sudo pacman -S yay
 yay -S typora
 # It works!
 # Note that if you complete these renewing steps, the GPU driver may not match corrent system settings,
-# don't worry about that, just reboot and the driver will upadate to the newest version, as well as CUDA version.
+# don't worry about that, just reboot and the driver will upadate to the newest version.
 
 # NOW LET US SOLVE A BIG PROBLEM
 # If you have multiple monitors, you may find that only one of them is working now.
@@ -145,3 +145,30 @@ conda info --envs
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
 # Try it again, the download is very fast now.
+
+# Install Cuda & Cudnn
+# This step is very relaxed under manjaro!
+# Just use yay or yaourt.
+# Here is an example of cuda8 & cudnn6, the version is up to you.
+# - install cuda:
+yay -S cuda-8.0
+# then add Paths to ~/.zshrc
+export CUDA_HOME=/opt/cuda
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
+# check cuda runtime version
+nvcc -V
+# check with an example
+cd /opt/cuda/samples/1_Utilities/deviceQuery
+sudo make
+./deviceQuery
+# - install cudnn:
+yay -S cudnn6
+# then copy cudnn to cuda folder
+sudo cp /opt/cudnn6/include/cudnn.h /opt/cuda/include
+sudo cp /opt/cudnn6/lib64/libcudnn* /opt/cuda/lib64
+sudo chmod a+r cuda/include/cudnn.h
+sudo chmod a+r cuda/include/cudnn.h
+# check cudnn version
+cat /opt/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+# Done. reboot.
