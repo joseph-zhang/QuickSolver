@@ -203,6 +203,7 @@ gem install rails
 gem install jekyll
 gem install bundler # If you don't have bundler installed
 gem install github-pages
+gem install kramdown
 
 # Deep Learning env
 # Just use conda to create a tensorflow environment
@@ -211,3 +212,31 @@ conda create -n tensorflow_gpuenv tensorflow-gpu
 conda activate tensorflow_gpuenv
 # Then just install packages you want by using
 conda install XXX # e.g. conda install matplotlib
+
+# Haskell env
+sudo pacman -S stack
+sudo pacman -S ghci
+# then change source, reference:
+# Stackage: https://mirrors.ustc.edu.cn/help/stackage.html
+# Hackage: https://mirrors.ustc.edu.cn/help/hackage.html
+
+# Racket
+sudo pacman -S racket
+
+# Rust
+# Following the official method: https://www.rust-lang.org/tools/install
+curl https://sh.rustup.rs -sSf | sh
+# and add the path to zshrc.
+
+# Ocaml & Coq
+# Following links below:
+# Ocaml: https://ocaml.org/docs/install.html
+# Opam: https://opam.ocaml.org/doc/Install.html
+pacman -S ocaml
+pacman -S opam
+# then coq
+export OPAMROOT=~/opam-coq.8.8.1 # installation directory
+opam init -n --comp=4.02.3 -j 2 # 2 is the number of CPU cores(can be changed)
+opam repo add coq-released http://coq.inria.fr/opam/released
+opam install coq.8.8.1 && opam pin add coq 8.8.1
+# to run coq, don't forget to add its path in zshrc.
