@@ -149,9 +149,9 @@ conda config --set show_channel_urls yes
 # Install Cuda & Cudnn
 # This step is very relaxed under manjaro!
 # Just use yay or yaourt.
-# Here is an example of cuda8 & cudnn6, the version is up to you.
+# Here is an example of cuda10 & cudnn7, the version is up to you.
 # - install cuda:
-yay -S cuda-8.0
+yay -S cuda-10.0 # v-10.0 is the newest version, if this not work, just use yay -S cuda
 # then add Paths to ~/.zshrc
 export CUDA_HOME=/opt/cuda
 export PATH=/opt/cuda/bin:$PATH
@@ -163,14 +163,7 @@ cd /opt/cuda/samples/1_Utilities/deviceQuery
 sudo make
 ./deviceQuery
 # - install cudnn:
-yay -S cudnn6
-# then copy cudnn to cuda folder
-sudo cp /opt/cudnn6/include/cudnn.h /opt/cuda/include
-sudo cp /opt/cudnn6/lib64/libcudnn* /opt/cuda/lib64
-sudo chmod a+r cuda/include/cudnn.h
-sudo chmod a+r cuda/include/cudnn.h
-# check cudnn version
-cat /opt/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+yay -S cudnn7 # as before, if this not work, just use yay -S cudnn
 # Done. reboot.
 
 # Font settings
@@ -204,7 +197,9 @@ npm install -g typescript
 
 # Optional: ruby for rubyist
 sudo pacman -S ruby
+gem sources --add https://gems.ruby-china.org/ # replace to China gem source
+gem sources --remove http://rubygems.org/ # delete old source
 gem install rails
 gem install jekyll
 gem install bundler # If you don't have bundler installed
-bundle install
+gem install github-pages
