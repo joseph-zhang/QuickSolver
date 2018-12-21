@@ -203,3 +203,11 @@ gem install rails
 gem install jekyll
 gem install bundler # If you don't have bundler installed
 gem install github-pages
+
+# Deep Learning env
+# Just use conda to create a tensorflow environment
+conda create -n tensorflow_gpuenv tensorflow-gpu
+# activate this environment
+conda activate tensorflow_gpuenv
+# Then just install packages you want by using
+conda install XXX # e.g. conda install matplotlib
