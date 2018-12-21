@@ -43,6 +43,7 @@ yay -S typora
 # It works!
 # Note that if you complete these renewing steps, the GPU driver may not match corrent system settings,
 # don't worry about that, just reboot and the driver will upadate to the newest version.
+# Moreover, if you like, octopi can be helpful for installing softwares.
 
 # NOW LET US SOLVE A BIG PROBLEM
 # If you have multiple monitors, you may find that only one of them is working now.
@@ -109,7 +110,8 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # Startup settings
 # - wallpaper setting
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpaper/wallpaper.jpg"
-# if this not work, set a picture in lightdm-settings
+# if this not work, set a picture in lightdm-settings, and delete default background pictures
+sudo rm /usr/share/backgrounds/*
 # - Using compton to set transparent. Just modify ~/.config/compton.conf, uncomment opacity terms.
 # don't forget to install feh
 pacman -S feh
