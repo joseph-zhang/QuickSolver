@@ -186,3 +186,25 @@ xrdb -load ~/.Xresources
 # Just modify ~/.zshrc, adding the following line.
 export TERM='xterm-256color'
 # Enjoy new font!
+
+# Optional: nvm for JSer
+sudo pacman -S nvm
+echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
+exec $SHELL
+# after nvm is installed, use following code to install latest release of node
+nvm install node
+# then use
+nvm use node
+# to check the node version. the npm should also be installed correctly.
+npm -v
+# to check the installed instances of nvm, just use
+nvm ls
+# If you need Typescript
+npm install -g typescript
+
+# Optional: ruby for rubyist
+sudo pacman -S ruby
+gem install rails
+gem install jekyll
+gem install bundler # If you don't have bundler installed
+bundle install
