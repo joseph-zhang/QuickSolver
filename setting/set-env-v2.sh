@@ -241,4 +241,11 @@ export OPAMROOT=~/opam-coq.8.8.1 # installation directory
 opam init -n --comp=4.02.3 -j 2 # 2 is the number of CPU cores(can be changed)
 opam repo add coq-released http://coq.inria.fr/opam/released
 opam install coq.8.8.1 && opam pin add coq 8.8.1
-# to run coq, don't forget to add its path in zshrc.
+# to run coq, don't forget to add its path to zshrc.
+# check coq version
+coqc -v
+# Now install some useful packages
+opam install merlin
+opam install utop
+opam install tuareg
+opam install ocp-indent
