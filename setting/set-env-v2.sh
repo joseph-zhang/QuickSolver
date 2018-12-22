@@ -255,6 +255,7 @@ opam install merlin
 opam install utop
 opam install tuareg
 opam install ocp-indent
+# Then, follow this link to set utop: https://dev.realworldocaml.org/install.html
 # note: (1). use `opam switch 'version'` to change ocaml version.
 #       (2). just use `opam switch` to check ocaml version list.
 #       (3). use `opam config var share` to check package path.
