@@ -1,4 +1,4 @@
-# 2018/12/19
+# 2018/12/22
 # Another development environment setting memo.
 # System OS : Manjaro
 # DE : no DE :)
@@ -140,8 +140,8 @@ sudo rmmod pcspkr
 # Don't forget to add install location to PATH in $HOME/.zshrc, we can copy that from $HOME/.bashrc
 source ~/.zshrc
 # Try it now:
-conda list
 conda info --envs
+conda list
 # So the Anaconda is installed.
 # We can also reset the source:
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
@@ -217,7 +217,7 @@ conda install XXX # e.g. conda install matplotlib
 
 # Haskell env
 sudo pacman -S stack
-sudo pacman -S ghci
+sudo pacman -S ghc
 # then change source, reference:
 # Stackage: https://mirrors.ustc.edu.cn/help/stackage.html
 # Hackage: https://mirrors.ustc.edu.cn/help/hackage.html
@@ -241,13 +241,20 @@ export OPAMROOT=~/.opam # installation directory
 opam init -n --comp=4.02.3 -j 2 # 2 is the number of CPU cores (can be changed)
 opam repo add coq-released http://coq.inria.fr/opam/released
 opam install coq.8.8.1 && opam pin add coq 8.8.1
-# to run coq, don't forget to add its path to zshrc.
+# to run coq, don't forget to add opam path to zshrc.
 # check coq version
 coqc -v
+# current ocaml version (4.02.3) is just for coq,
+# hence we also install a newer compiler version (e.g. 4.04.1)
+opam switch create 4.04.1
+eval $(opam env)
 # Now install some useful packages
 opam update
-opam install Core
+opam install core
 opam install merlin
 opam install utop
 opam install tuareg
 opam install ocp-indent
+# note: (1). use `opam switch 'version'` to change ocaml version.
+#       (2). just use `opam switch` to check ocaml version list.
+#       (3). use `opam config var share` to check package path.
