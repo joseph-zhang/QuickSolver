@@ -41,7 +41,7 @@ sudo pacman -S yay
 # try to use yay, for example, install typora
 yay -S typora
 # It works!
-# Note that if you complete these renewing steps, the GPU driver may not match corrent system settings,
+# Note that if you complete these renewing steps, the GPU driver may not match current system settings,
 # don't worry about that, just reboot and the driver will upadate to the newest version.
 # Moreover, if you like, octopi can be helpful for installing softwares.
 
