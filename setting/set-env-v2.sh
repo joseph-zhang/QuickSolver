@@ -256,6 +256,7 @@ opam install utop
 opam install tuareg
 opam install ocp-indent
 # Then, follow this link to set utop: https://dev.realworldocaml.org/install.html
-# note: (1). use `opam switch 'version'` to change ocaml version.
+# note: (1). use `opam switch 'version'` to change ocaml base compiler version.
 #       (2). just use `opam switch` to check ocaml version list.
-#       (3). use `opam config var share` to check package path.
+#       (3). use `opam switch remove 'version'` to wipe a version and all its packages.
+#       (4). use `opam config var share` to check package path.
