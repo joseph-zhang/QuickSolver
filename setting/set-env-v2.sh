@@ -134,19 +134,35 @@ exec fcitx &
 # Beep is noisy. To close it, use this command
 sudo rmmod pcspkr
 
-# Install python env - Anaconda
-# First download install file, recommend to search the install file from a mirror site (e.g. USTC Mirror)
+# Install python env - via Anaconda
+# First download installation file, recommend to search the install file from a mirror site (e.g. USTC Mirror)
 # Then, follow the install steps on "http://docs.anaconda.com/anaconda/install/linux/"
 # Don't forget to add install location to PATH in $HOME/.zshrc, we can copy that from $HOME/.bashrc
 source ~/.zshrc
 # Try it now:
-conda info --envs
+conda info --envs # or `conda env list`
 conda list
 # So the Anaconda is installed.
 # We can also reset the source:
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
 # Try it again, the download is very fast now.
+########################################################################################
+## *TIPs*                                                                             ##
+## - check installed packages of current env: `conda list`                            ##
+## - check existing envs: `conda env list`                                            ##
+## - create a new env with some packages: `conda create -n "env-name" xxx xxx ...`    ##
+## - create a new env by yaml file: `conda env create -f xxx.yaml`                    ##
+## - export env configuration as yaml: `conda env export > xxx.yaml`                  ##
+## - change current active env: `conda activate "env-name"`                           ##
+## - leave current env: `conda deactivate`                                            ##
+## - delete a specific env: `conda env remove -n "env-name"`                          ##
+## - remove cached package tarballs: `conda clean -t`                                 ##
+## - remove unused cached packages: `conda clean -p`                                  ##
+## - update packages of current env: `conda update xxx`                               ##
+## - install new packages to current env: `conda install xxx`                         ##
+## - remove packages from current env: `conda remove xxx`                             ##
+########################################################################################
 
 # Install Cuda & Cudnn
 # This step is very relaxed under manjaro!
