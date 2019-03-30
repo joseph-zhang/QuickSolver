@@ -67,6 +67,7 @@ bindsym $mod+F1 exec emacs
 bindsym $mod+F2 exec chromium
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F4 exec netease-cloud-music
+bindsym $mod+F12 exec guake
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
