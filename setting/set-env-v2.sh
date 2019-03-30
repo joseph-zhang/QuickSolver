@@ -134,6 +134,13 @@ exec fcitx &
 # Beep is noisy. To close it, use this command
 sudo rmmod pcspkr
 
+# Some modern linux command
+sudo pacman -S fd
+sudo pacman -S exa
+# and do not forget to set alias in bashrc or zshrc
+alias ls='exa'
+alias find='fd'
+
 # Install python env - via Anaconda
 # First download installation file, recommend to search the install file from a mirror site (e.g. USTC Mirror)
 # Then, follow the install steps on "http://docs.anaconda.com/anaconda/install/linux/"
