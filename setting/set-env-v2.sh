@@ -207,6 +207,11 @@ xrdb -load ~/.Xresources
 export TERM='xterm-256color'
 # Enjoy new font!
 
+# Optional: guake terminal
+# another choice
+sudo pacman -S guake
+# and set zsh as the interpreter && iosevka font && theme::Tomorrow Night && i3 key-binding
+
 # Optional: nvm for JSer
 sudo pacman -S nvm
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
