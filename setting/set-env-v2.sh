@@ -137,9 +137,11 @@ sudo rmmod pcspkr
 # Some modern linux command
 sudo pacman -S fd
 sudo pacman -S exa
+sudo pacman -S bat
 # and do not forget to set alias in bashrc or zshrc
 alias ls='exa'
 alias find='fd'
+alias cat='bat'
 
 # Install python env - via Anaconda
 # First download installation file, recommend to search the install file from a mirror site (e.g. USTC Mirror)
