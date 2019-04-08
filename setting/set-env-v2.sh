@@ -32,10 +32,10 @@ sudo vim /etc/pacman.conf # open this file for modifying
 # [archlinuxcn]
 # Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 
-# Renewing Source
-sudo pacman -Syy # this step only synchronize packages
+# Renewing Source (!!! never run -Sy below, but always use -Syu !!!)
+sudo pacman -Sy # this step only synchronize packages, partial upgrades
 # renew the whole system. Do not forget to add arch key
-sudo pacman -Syyu && sudo pacman -S archlinuxcn-keyring
+sudo pacman -Syu && sudo pacman -S archlinuxcn-keyring
 # yaourt is old, we can install yay for replacing
 sudo pacman -S yay
 # try to use yay, for example, install typora
