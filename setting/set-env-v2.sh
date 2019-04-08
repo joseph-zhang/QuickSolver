@@ -98,7 +98,7 @@ xrandr --auto
 sudo chmod a+rx /usr/local/bin/optimus.sh
 # - modify /etc/lightdm/lightdm.conf, adding the following line to [Seat:*] term
 display-setup-script=/usr/local/bin/optimus.sh
-# (5). OK, reboot and check if it work.
+# (5). OK, reboot and check if it works.
 # If your setting is correct, the other monitor will work now.
 # However, what is shown on that monitor is the same as primary one.
 # Just use arandr to change the manner: save arandr setting in ~/.screenlayout and exec it in i3 config file.
@@ -106,6 +106,15 @@ display-setup-script=/usr/local/bin/optimus.sh
 # zsh and oh-my-zsh
 # zsh is pre-installed in my i3 version, but oh-my-zsh setting is still needed.
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# DNS setting for github
+# modify /etc/hosts, append the following lines
+192.30.253.112 github.com
+192.30.253.113 github.com
+151.101.184.133 assets-cdn.github.com
+151.101.185.194 github.global.ssl.fastly.net
+# then restart DNS
+sudo systemctl restart NetworkManager.service
 
 # Startup settings
 # - wallpaper setting
