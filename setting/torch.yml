@@ -1,0 +1,32 @@
+name: "torch"
+
+channels:
+  - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+
+dependencies:
+  - python
+  - pip
+  - pytorch
+  - torchvision
+  - visdom
+  - tensorflow
+  - cudatoolkit=10.0
+  - pandas
+  - matplotlib
+  - ipython
+  - pillow
+  - tqdm
+  - tifffile
+  - numpy
+  - opencv
+  - graphviz
+  - scipy
+  - scikit-image
+  - pip:
+    - pydot
+    - tensorboardX
+    - toposort
+    - albumentations
+    - opencv-contrib-python

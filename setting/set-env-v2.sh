@@ -248,12 +248,14 @@ gem install github-pages
 gem install kramdown
 
 # Deep Learning env
-# Just use conda to create a tensorflow environment
+# for example, we can use conda to create a tensorflow environment
 conda create -n tensorflow_gpuenv tensorflow-gpu
 # activate this environment
 conda activate tensorflow_gpuenv
 # Then just install packages you want by using
 conda install XXX # e.g. conda install matplotlib
+# !! HOWEVER, I recommend to build envs from yml config file directly,
+# there is a pytorch example in torch.yml
 
 # Haskell env
 sudo pacman -S stack
