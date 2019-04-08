@@ -129,6 +129,7 @@ exec fcitx &
 # Conky prompt information
 # If you don't want to show prompt inforamtions about i3wm,
 # just modify /usr/share/conky/conkyxx_shortcuts_maia, comment those lines in conky.text
+# you can also change the color in conky_solarized, recommend #FAEBD7
 
 # Close Beep
 # Beep is noisy. To close it, use this command
