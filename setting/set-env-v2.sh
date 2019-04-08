@@ -229,7 +229,7 @@ npm install -g typescript
 
 # Optional: ruby for rubyist
 sudo pacman -S ruby
-gem sources --add https://gems.ruby-china.org/ # replace to China gem source
+gem sources --add https://gems.ruby-china.com/ # replace to China gem source
 gem sources --remove http://rubygems.org/ # delete old source
 gem install rails
 gem install jekyll
