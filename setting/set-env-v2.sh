@@ -215,7 +215,14 @@ xrdb -load ~/.Xresources
 # If some command cannot work, with error 'rxvt-unicode-256color': unknown terminal type.
 # Just modify ~/.zshrc, adding the following line.
 export TERM='xterm-256color'
-# Enjoy new font!
+# install some other font packages
+sudo pacman -S adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts adobe-source-han-serif-jp-fonts
+yay -S ttf-ms-fonts
+yay -S ttf-mac-fonts
+# Enjoy new fonts!
+
+# Install TeXLive
+sudo pacman -S texlive-most texlive-lang
 
 # Optional: guake terminal
 # another choice
