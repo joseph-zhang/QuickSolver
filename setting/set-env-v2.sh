@@ -1,4 +1,4 @@
-# 2018/12/22
+# 2019/04/16
 # Another development environment setting memo.
 # System OS : Manjaro
 # DE : no DE :)
