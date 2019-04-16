@@ -334,3 +334,5 @@ sudo make install
 # and then it will give us a folder that contains /include and /src,
 # move things in /include to /usr/local/include.
 # Note that the C file glad.c in /src should be used as project file.
+# Install GLM lib
+sudo pacman -S glm
