@@ -319,4 +319,18 @@ cd build
 cmake ..
 make
 sudo make install
-# Now GLFW has installed
+# Now GLFW has been installed.
+# Then we should try it with examples.
+# If get an error like "usr/bin/ld: cannot find -lglfw3",
+# Then you should check if install destination is /usr/local/lib64 (while we need /usr/local/lib)
+# If so, just move them to /usr/local/lib, the problem should be solved.
+# Now we install GLAD.
+# First download a proper version from http://glad.dav1d.de/
+# note that we should choose these options:
+#    Language: 'C/C++'
+#    Specification: 'OpenGL'
+#    API::gl: 'version xxx' (xxx >= 3.3)
+#    Profile: 'Core'
+# and then it will give us a folder that contains /include and /src,
+# move things in /include to /usr/local/include.
+# Note that the C file glad.c in /src should be used as project file.
