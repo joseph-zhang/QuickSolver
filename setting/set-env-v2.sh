@@ -309,3 +309,14 @@ opam install ocp-indent
 #       (2). just use `opam switch` to check ocaml version list.
 #       (3). use `opam switch remove 'version'` to wipe a version and all its packages.
 #       (4). use `opam config var share` to check package path.
+
+# OpenGL related Libs
+# First we build and install GLFW (instead of old GLUT)
+# Download source code from https://www.glfw.org/download.html
+# Now cd to that folder, and follow these steps:
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+# Now GLFW has installed
