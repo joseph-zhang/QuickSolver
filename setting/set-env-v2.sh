@@ -336,3 +336,12 @@ sudo make install
 # Note that the C file glad.c in /src should be used as project file.
 # Install GLM lib
 sudo pacman -S glm
+
+# Install Mathematica
+# check this page to install: http://support.wolfram.com/kb/12453?lang=en
+# There may exist some compatibility issues like this:
+# "Symbol lookup error: /usr/lib/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var"
+# To solve this problem, following archwiki:
+cd <INSTALL_DIR>/SystemFiles/Libraries/Linux-x86-64
+mv libfreetype.so.6 libfreetype.so.6.old
+mv libz.so.1 libz.so.1.old
