@@ -204,8 +204,8 @@ yay -S cudnn7 # as before, if this not work, just use yay -S cudnn
 # Done. reboot.
 
 # Font settings
-# First install iosevka
-sudo pacman -S ttf-iosevka-cc-slab
+# First install Iosevka and Sarasa-Gothic
+sudo pacman -S ttf-iosevka-cc-slab ttf-sarasa-gothic
 # set i3-bar font, modify $HOME/.i3/config
 font xft:IosevkaCC Slab 11
 # then, set Urxvt font, modify ~/.Xresources
