@@ -355,3 +355,5 @@ mv libz.so.1 libz.so.1.old
 source ~/.zshrc
 # check julia version
 julia -version
+# !!! another recommend method is just use pacman
+sudo pacman -S julia
