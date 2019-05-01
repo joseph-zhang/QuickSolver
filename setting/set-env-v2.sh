@@ -345,3 +345,13 @@ sudo pacman -S glm
 cd <INSTALL_DIR>/SystemFiles/Libraries/Linux-x86-64
 mv libfreetype.so.6 libfreetype.so.6.old
 mv libz.so.1 libz.so.1.old
+
+# optional: Julia installation
+# First download the binary files from one of:
+# 1). offical: https://julialang.org/downloads/ (may be very slow)
+# 2). mirrors (e.g. USTC): http://mirrors.ustc.edu.cn/julia/
+# then decompress the package to a path (up to you)
+# and add your julia path to bashrc or zshrc PATH.
+source ~/.zshrc
+# check julia version
+julia -version
