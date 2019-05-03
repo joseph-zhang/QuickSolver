@@ -278,6 +278,13 @@ sudo pacman -S racket
 # Following the official method: https://www.rust-lang.org/tools/install
 curl https://sh.rustup.rs -sSf | sh
 # and add the path to zshrc.
+# then install racer
+cargo install racer
+# note that you may meet the error like this:
+"#![feature] may not be used on the stable release channel"
+# To overcome, you can try nightly rust
+rustup install nightly
+cargo +nightly install racer
 
 # Ocaml & Coq
 # Following links below:
