@@ -285,6 +285,8 @@ cargo install racer
 # To overcome, you can try nightly rust
 rustup install nightly
 cargo +nightly install racer
+# then add source code
+rustup component add rust-src
 
 # Ocaml & Coq
 # Following links below:
