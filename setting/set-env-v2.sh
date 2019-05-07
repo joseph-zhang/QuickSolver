@@ -1,4 +1,4 @@
-# 2019/04/16
+# 2019/05/07
 # Another development environment setting memo.
 # System OS : Manjaro
 # DE : no DE :)
@@ -379,3 +379,18 @@ sudo pacman -S qtcreator
 #                use "Qt Creator Dark" Color Theme;
 # - C++: use "GNU (built-in)" Code Style;
 # - Build & Run: write your own project default Directory.
+
+# optional: Wine
+# if you need to execute .exe file
+# First check /etc/pacman.conf, and uncomment [mutilib] item;
+# Then install wine:
+sudo pacman -S wine winetricks wine-mono wine_gecko
+
+# optional: osu!
+# thanks to ThePooN's AUR package wine-osu, the installation will be easier now
+# The AUR: https://aur.archlinux.org/packages/wine-osu/
+# upstream: https://blog.thepoon.fr/osuLinuxAudioLatency/
+# actually, we just need to run
+sudo pacman -S wine-osu
+# however, the compile time is much long, ThePooN provide a repository for us
+# the details can be found in upstream.
