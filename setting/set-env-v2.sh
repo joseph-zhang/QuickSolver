@@ -392,6 +392,5 @@ sudo pacman -S wine winetricks wine-mono wine_gecko
 # upstream: https://blog.thepoon.fr/osuLinuxAudioLatency/
 # actually, we just need to run
 sudo pacman -S wine-osu
-yay -S osu
 # however, the compile time is much long, ThePooN provide a repository for us
-# the details can be found in upstream.
+# The whole installation details can be found in upstream.
