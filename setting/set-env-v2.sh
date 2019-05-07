@@ -366,3 +366,16 @@ source ~/.zshrc
 julia -version
 # !!! another recommend method is just use pacman
 sudo pacman -S julia
+
+# optional: Qt (as a lightweight Cpp IDE or other use: GUI programming ...)
+# follow this link to install: https://wiki.archlinux.org/index.php/Qt
+sudo pacman -S qt5-base qt5-doc
+sudo pacman -S qtcreator
+# After installation, use the following setting for a better editor env:
+# choose Tools -> Options..
+# - Environment: use "Flat Dark" Theme;
+#                use "urxvt" as Terminal;
+# - Text Editor: use "Sarasa Term SC Light" Font with size "12";
+#                use "Qt Creator Dark" Color Theme;
+# - C++: use "GNU (built-in)" Code Style;
+# - Build & Run: write your own project default Directory.
