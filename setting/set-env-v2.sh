@@ -330,6 +330,8 @@ make
 sudo make install
 # Now GLFW has been installed.
 # Then we should try it with examples.
+# Compile example like this:
+#    g++ -o run.out example.cpp glad.c -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXxf86vm -lXinerama -lXcursor -lXi -ldl
 # If get an error like "usr/bin/ld: cannot find -lglfw3",
 # Then you should check if install destination is /usr/local/lib64 (while we need /usr/local/lib)
 # If so, just move them to /usr/local/lib, the problem should be solved.
