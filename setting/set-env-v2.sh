@@ -396,3 +396,7 @@ sudo pacman -S wine winetricks wine-mono wine_gecko
 sudo pacman -S wine-osu
 # however, the compile time is much long, ThePooN provide a repository for us
 # The whole installation details can be found in upstream.
+
+# optional: 3d construction, point cloud
+yay -S pcl
+sudo pacman -S blender
