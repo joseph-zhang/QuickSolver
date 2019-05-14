@@ -400,3 +400,5 @@ sudo pacman -S wine-osu
 # optional: 3d construction, point cloud
 yay -S pcl
 sudo pacman -S blender
+yay -S openmesh
+yay -S meshlab
