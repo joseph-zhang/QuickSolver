@@ -204,6 +204,8 @@ yay -S cudnn7 # as before, if this not work, just use yay -S cudnn
 # Done. reboot.
 
 # Font settings
+# install font viewer
+sudo pacman -S gnome-font-viewer
 # First install Iosevka and Sarasa-Gothic
 sudo pacman -S ttf-iosevka-cc-slab ttf-sarasa-gothic
 # set i3-bar font, modify $HOME/.i3/config
