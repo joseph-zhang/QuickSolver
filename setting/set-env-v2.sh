@@ -399,9 +399,11 @@ sudo pacman -S wine-osu
 # however, the compile time is much long, ThePooN provide a repository for us
 # The whole installation details can be found in upstream.
 
-# optional: 3d construction, point cloud
+# optional: 3d construction, point cloud and etc.
 yay -S pcl
 sudo pacman -S blender
 sudo pacman -S qgis
 yay -S openmesh
 yay -S meshlab
+# install open3d python binding for a proper conda env
+conda install -c open3d-admin open3d
