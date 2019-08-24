@@ -276,6 +276,13 @@ sudo pacman -S ghc
 # Agda
 sudo pacman -S agda
 sudo pacman -S agda-stdlib
+# Now agda will be installed at /usr/share/agda
+# and agda-stdlib will be installed at /usr/share/agda/lib/stdlib
+# To use the standard library by default, you have to do two things
+# 1. create file ~/.agda/libraries with AGDA_STDLIB/standard-library.agda-lib
+echo "/usr/share/agda/lib/standard-library.agda-lib" >> ~/.agda/libraries
+# 2. create file ~/.agda/defaults with your default lib (we use standard library here)
+echo "standard-library" >> ~/.agda/defaults
 
 # Racket
 sudo pacman -S racket
