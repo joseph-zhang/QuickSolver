@@ -273,6 +273,10 @@ sudo pacman -S ghc
 # Stackage: https://mirrors.ustc.edu.cn/help/stackage.html
 # Hackage: https://mirrors.ustc.edu.cn/help/hackage.html
 
+# Agda
+sudo pacman -S agda
+sudo pacman -S agda-stdlib
+
 # Racket
 sudo pacman -S racket
 
