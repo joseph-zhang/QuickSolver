@@ -418,3 +418,5 @@ yay -S openmesh
 yay -S meshlab
 # install open3d python binding for a proper conda env
 conda install -c open3d-admin open3d
+# just for fun, Aseprite for pixel art
+yay -S aseprite
