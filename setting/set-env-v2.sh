@@ -1,4 +1,4 @@
-# 2019/05/07
+# 2019/10/12
 # Another development environment setting memo.
 # System OS : Manjaro
 # DE : no DE :)
@@ -107,7 +107,7 @@ display-setup-script=/usr/local/bin/optimus.sh
 # zsh is pre-installed in my i3 version, but oh-my-zsh setting is still needed.
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# DNS setting for github
+# DNS setting for github (example to modify hosts)
 # modify /etc/hosts, append the following lines
 192.30.253.112 github.com
 192.30.253.113 github.com
@@ -221,6 +221,9 @@ export TERM='xterm-256color'
 sudo pacman -S adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts adobe-source-han-serif-jp-fonts
 yay -S ttf-ms-fonts
 yay -S ttf-mac-fonts
+pacman -S ttf-font-awesome
+pacman -S ttf-material-icons
+pacman -S nerd-fonts-complete
 # Enjoy new fonts!
 
 # Install TeXLive
