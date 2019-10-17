@@ -351,6 +351,8 @@ sudo make install
 # If get an error like "usr/bin/ld: cannot find -lglfw3",
 # Then you should check if install destination is /usr/local/lib64 (while we need /usr/local/lib)
 # If so, just move them to /usr/local/lib, the problem should be solved.
+# We can also install glfw as package so that they can be found in pkg-config easily:
+sudo pacman -S glfw-x11
 # Now we install GLAD.
 # First download a proper version from http://glad.dav1d.de/
 # note that we should choose these options:
